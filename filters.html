@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Filter</title>
+    <link rel="stylesheet" href="./filters.css" />
+  </head>
+  <body>
+    <!-- products -->
+    <section class="products">
+      <!-- filters -->
+      <div class="products-filter">
+        <!-- search -->
+        <form class="form">
+          <input type="text" class="search-input" placeholder="search your product" />
+        </form>
+
+        <!-- categories -->
+        <h5>-Select Store-</h5>
+        <article class="stores">
+          <button class="store-btn">all</button>
+          <button class="store-btn">inkter</button>
+          <button class="store-btn">minister</button>
+        </article>
+      </div>
+
+      <!-- products -->
+      <div class="products-container">
+        <h2 class="products-title">Furniture Filter</h2>
+
+        <div class="products-images">
+          <!-- single product -->
+          <article class="product">
+            <img src="./img/image-1.jpeg" class="product-img" alt="Bedroom Set"/>
+
+            <footer>
+              <h5 class="product-name">bedroom set</h5>
+              <span class="product-price">$149.95</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="./products.js"></script>
+    <script src="./filters.js"></script>
+  </body>
+</html>
