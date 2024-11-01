@@ -8,8 +8,9 @@
 
 /* =============== CSS Variables =============== */
 :root {
+  --white-color: white;
   --dark-white-color: #e7ebf0;
-  --mid-grey-color: #e7e0e0;
+  --mid-grey-color: #c2bebe;
   --black-color: black;
   --borderRadius: 0.25rem;
   --fluid-width: 90vw;
@@ -76,6 +77,10 @@ body {
 
 .store-btn:hover {
   color: var(--mid-grey-color);
+}
+
+.store-btn.color {
+  color: var(--white-color);
 }
 
 .products-images {

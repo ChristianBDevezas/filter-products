@@ -46,6 +46,7 @@ form.addEventListener('keyup', () => {
   });
 
   displayProducts();
+  removeSelectedStore();
 });
 
 // Cosole Products
@@ -105,4 +106,18 @@ storesDOM.addEventListener('click', (e) => {
     searchInput.value = '';
     displayProducts();
   }
+});
+
+// Change button color of selected store
+const buttons = document.querySelectorAll('button');
+
+function removeSelectedStore() {
+  buttons.forEach((btn) => btn.classList.remove('color'));
+}
+
+buttons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    removeSelectedStore();
+    btn.classList.add('color');
+  });
 });
