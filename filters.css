@@ -119,13 +119,13 @@ body {
   font-weight: 500;
   text-transform: capitalize;
   color: var(--grey-500);
+  margin-top: 2px;
 }
 
 .product-price {
   font-size: .85rem;
   font-weight: 700;
   display: block;
-  margin-top: -4px;
 }
 
 /*Media Queries*/

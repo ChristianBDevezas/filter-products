@@ -50,10 +50,10 @@ form.addEventListener('keyup', () => {
 });
 
 // Cosole Products
-console.log(
-  products.filter((product) => {
-    return product.title.toLowerCase().includes('');
-    // return product.title.toLowerCase().includes('sofa');
+console.log(products.filter((product) => {
+  // return product;
+  return product.title.toLowerCase().includes('');
+  // return product.title.toLowerCase().includes('sofa');
   })
 );
 
@@ -75,11 +75,11 @@ const displayButtons = () => {
   //It must be an array to use the map() method
   storesDOM.innerHTML = buttons.map((store) => {
       return `<button class='store-btn' data-id="${store}">${store}</button>`;
-    }).join('');
+  }).join('');
 
   // buttons.forEach((store) => {
   //   storesDOM.innerHTML += `
-  //   <button class="store-btn" data-id="${store}">${store}</button>
+  //     <button class="store-btn" data-id="${store}">${store}</button>
   //   `;
   // });
 };
